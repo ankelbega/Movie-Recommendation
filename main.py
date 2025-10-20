@@ -40,7 +40,7 @@ def recommend_movie(title, n=5):
     # FIXED: Changed 'title' to the correct column name: 'Title'
     top_movies = [df.iloc[i[0]]['Title'] for i in sim_scores[1:n+1]]
 
-    print(f"\n🎬 Because you liked *{title}*, you might also like:")
+    print(f"\n🎬 Because you liked *{title}*, you might also like these movies:")
     for m in top_movies:
         print(f"👉 {m}")
 
